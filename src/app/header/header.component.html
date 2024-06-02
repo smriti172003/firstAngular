@@ -1,0 +1,18 @@
+<p>header works!</p>
+
+<button (click)="hidebt()">Button 1</button>
+<button *ngIf="isActive">Button 2</button>
+
+<div *ngFor="let data of showArr">
+    {{data}}
+</div>
+
+<br>
+
+<p class="demo">Hi Angular</p>
+<p [ngClass]="{'demo' : testValue === 4}">Hi ,angular</p>
+
+<div *ngFor="let value of jsonArr">
+    {{value.Name}} - {{value.Skill}}
+</div>
+<app-navbar> </app-navbar>
